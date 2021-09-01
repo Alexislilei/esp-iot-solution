@@ -74,11 +74,11 @@ void app_main()
         .interface_spi = {
             .spi_bus = spi2_bus,
             .pin_num_cs = BOARD_TOUCH_SPI_CS_PIN,
-            .clk_freq = 10000000,
+            .clk_freq = 2000000,
         },
         .interface_type = TOUCH_PANEL_IFACE_SPI,
         .pin_num_int = -1,
-        .direction = TOUCH_DIR_TBLR,
+        .direction = TOUCH_DIR_BTLR,
         .width = 240,
         .height = 320,
     };
@@ -96,7 +96,7 @@ void app_main()
 #elif defined CONFIG_LV_DEMO_WIDGETS
     lv_demo_widgets();
 #elif defined CONFIG_LV_EX_GET_STARTED
-    lv_ex_get_started_1();
+    lv_ex_get_started_2();
 #elif defined CONFIG_LV_DEMO_STRESS
     lv_demo_stress();
 #elif defined CONFIG_LV_EX_STYLE

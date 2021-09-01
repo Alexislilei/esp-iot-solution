@@ -614,11 +614,11 @@ void app_main()
         .interface_spi = {
             .spi_bus = spi2_bus,
             .pin_num_cs = BOARD_TOUCH_SPI_CS_PIN,
-            .clk_freq = 10000000,
+            .clk_freq = 2000000,
         },
         .interface_type = TOUCH_PANEL_IFACE_SPI,
         .pin_num_int = -1,
-        .direction = TOUCH_DIR_TBLR,
+        .direction = TOUCH_DIR_BTLR,
         .width = 240,
         .height = 320,
     };

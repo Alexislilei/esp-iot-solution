@@ -5,7 +5,7 @@ menu "Example Configuration"
             default LV_DEMO_WIDGETS
 
         config LV_DEMO_BENCHMARK
-            bool "LV_DEMO_BENCHMARK"
+            bool "LV_DEMO_BENCHMARK-啦"
         config LV_DEMO_PRINTER
             bool "LV_DEMO_PRINTER"
         config LV_DEMO_WIDGETS
